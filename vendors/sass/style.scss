@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#calendar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .boxCard {
+        width: 23%;
+        margin-top: 10px;
+        padding:10px ;
+        color: white;
+        background-color: #ae5959;
+        .months{
+            text-align: center;
+        }
+        .week{
+            display: flex;
+            justify-content: space-around;
+        }
+        .days {
+            width: 100%;
+            background-color: #ae5959;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .active{
+                background-color:#c7c0c0 ;
+            }
+            span{
+                background-color: #ab8888;
+                width: 12%;
+                height: 25px;
+                margin: 2px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
